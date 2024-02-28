@@ -36,6 +36,13 @@
 
 -- MOSTRAR TABLAS
 -- -- SHOW TABLES
+-- -- EJEMPLO:
+-- -- -- mysql> SHOW TABLES;
+-- -- -- +-------------------+
+-- -- -- | Tables_in_ElJhony |
+-- -- -- +-------------------+
+-- -- -- | coders            |
+-- -- -- +-------------------+
 
 -- VER DETALLES DE TABLA ESPECIFICA (DESCRIBIR)
 -- -- DESC <Nombre tabla>
@@ -47,3 +54,15 @@
 
 -- MOSTRAR LOS REGISTROS DE UNA TABLA
 -- -- SELECT * FROM <Nombre tabla>
+
+-- AGREGAR ATRIBUTO A TABLA EXISTENTE
+-- -- ALTER TABLE <Nombre tabla> ADD COLUMN <Nombre nuevo atributo> <Tipo dato> restricciones
+-- -- EJEMPLO:
+-- -- -- ALTER TABLE coders
+-- -- --     -> ADD COLUMN fecha_nacimiento DATE;
+
+-- MODIFICAR ATRIBUTO DE TABLA EXISTENTE
+-- -- ALTER TABLE <Nombre tabla> MODIFY COLUMN <Nombre atributo> <Tipo dato> restricciones
+
+-- MODIFICAR NOMBRE DE ATRIBUTO
+-- -- ALTER TABLE <Nombre tabla> CHANGE COLUMN <Nombre atributo actual> <Nombre nuevo atributo> <Tipo dato> restricciones
