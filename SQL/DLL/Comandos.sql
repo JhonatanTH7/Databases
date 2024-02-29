@@ -66,3 +66,27 @@
 
 -- MODIFICAR NOMBRE DE ATRIBUTO
 -- -- ALTER TABLE <Nombre tabla> CHANGE COLUMN <Nombre atributo actual> <Nombre nuevo atributo> <Tipo dato> restricciones
+
+-- ELIMINAR TABLA
+-- -- DROP TABLE <Nombre tabla>
+
+-- ESTRUCTURA CONSTRAINT
+-- -- CONSTRAINT fk_id_<Tabla de donde se trae en singular> FOREIGN KEY (<Nombre como cree el atributo FK>) REFERENCES <Tabla>(<Atributo id de la Tabla>);
+-- -- EJEMPLO:
+-- -- -- CONSTRAINT fk_id_conjunto FOREIGN KEY (id_conjunto) REFERENCES conjuntos(nit_conjunto);
+
+-- AGREGAR RESTRICCION CONSTRAINT (FK) A TABLA EXISTENTE
+-- -- EJEMPLO:
+-- -- -- ALTER TABLE edificios ADD CONSTRAINT fk_id_conjunto FOREIGN KEY (id_conjunto) REFERENCES conjuntos(nit_conjunto);
+
+-- CREAR TABLA CON CONSTRAINT (FK)
+-- -- EJEMPLO:
+-- -- -- CREATE TABLE novedades (
+-- -- --     id INT AUTO_INCREMENT PRIMARY KEY,
+-- -- --     id_edificio INT,
+-- -- --     id_vigilante VARCHAR(10),
+-- -- --     CONSTRAINT fk_id_edificio FOREIGN KEY (id_edificio)
+-- -- --         REFERENCES edificios (id),
+-- -- --     CONSTRAINT fk_id_vigilante FOREIGN KEY (id_vigilante)
+-- -- --         REFERENCES vigilantes (cc_vigilante)
+-- -- -- );
