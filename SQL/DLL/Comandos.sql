@@ -49,8 +49,9 @@
 
 -- AGREGAR REGISTROS A TABLA
 -- -- INSERT INTO <Nombre tabla>(nombres campos a agregar separados por  comas)VALUES(valores para los campos)
--- -- EJEMPLO:
+-- -- EJEMPLOS:
 -- -- -- INSERT INTO coders(nombre,email)VALUES("Jhonatan TEST","JhonatanTEST@TEST.com");
+-- -- -- INSERT INTO conjuntos VALUES("1","Conjunto1","1"),("2","Conjunto2","2"),("3","Conjunto3","3");
 
 -- MOSTRAR LOS REGISTROS DE UNA TABLA
 -- -- SELECT * FROM <Nombre tabla>
