@@ -91,3 +91,58 @@
 -- -- --     CONSTRAINT fk_id_vigilante FOREIGN KEY (id_vigilante)
 -- -- --         REFERENCES vigilantes (cc_vigilante)
 -- -- -- );
+
+-- ESTRUCUTRA BASICA CONSULTA
+-- -- SELECT
+-- -- -- EJEMPLO:
+-- -- -- -- SELECT * FROM cliente;
+
+-- -- FROM
+-- -- -- Se utiliza para especificar la tabla donde se va a hacer la consulta
+-- -- -- EJEMPLO:
+-- -- -- -- SELECT * FROM cliente;
+
+-- -- WHERE
+-- -- -- Se utiliza para filtrar el resultado de una consulta
+-- -- -- EJEMPLO:
+
+-- -- GROUP BY
+
+
+-- -- HAVING
+-- -- -- Se utiliza para filtrar en consultas de información agrupada(Se tiene que haber usado el GROUP BY)
+
+-- -- ORDER BY
+-- -- -- Se utiliza para ordenar la información resultado ascendente y descendente(ASC,DESC)
+-- -- -- EJEMPLO:
+-- -- -- -- SELECT * FROM medicamentos ORDER BY medicamentos.med_valor DESC;
+
+-- UNION DE TABLAS
+-- -- INNER JOIN
+-- -- -- Valida coincidencias y en caso de coincidir se genera una tabla con la combinación de las filas con elementos iguales
+
+-- -- LEFT JOIN
+-- -- -- Selecciona TODO lo de la tabla A y las coincidencias con la Tabla B para generas una tabla nueva
+
+-- -- RIGHT JOIN
+-- -- -- Selecciona TODO lo de la tabla B y las coincidencias con la Tabla A para generas una tabla nueva
+
+-- LIKE
+-- -- Se utiliza para verificar si una palabra contiene una letra especificada
+-- -- EJEMPLO:
+-- -- -- Para la letra al inicio
+-- -- -- -- SELECT * FROM medicamentos WHERE medicamentos.med_nombre LIKE 'm%';
+-- -- -- Para la letra al final
+-- -- -- -- SELECT * FROM medicamentos WHERE medicamentos.med_nombre LIKE '%m';
+-- -- -- Que contenga la letra en cualquier parte
+-- -- -- -- SELECT * FROM medicamentos WHERE medicamentos.med_nombre LIKE '%m%';
+
+-- CHAR_LENGTH()
+-- -- Se utiliza para verificar la longitud de una palabra
+-- -- EJEMPLO:
+-- -- -- CHAR_LENGTH(medicamentos.med_nombre)
+
+-- BETWEEN
+-- -- Se utiliza para revisar si un valor esta dentro de dos valores dados
+-- -- EJEMPLO:
+-- -- -- SELECT * FROM medicamentos WHERE medicamentos.med_valor BETWEEN 40 AND 1000;
